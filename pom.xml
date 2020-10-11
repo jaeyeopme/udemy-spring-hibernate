@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>spring-rest-api</artifactId>
+
+  <build>
+
+    <plugins>
+
+      <!-- Builds a Web Application Archive (WAR) file from the project output
+          and its dependencies. -->
+      <plugin>
+        <!-- Add Maven coordinates (GAV) for: maven-war-plugin -->
+        <artifactId>maven-war-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.2.0</version>
+      </plugin>
+
+    </plugins>
+  </build>
+  <dependencies>
+
+    <dependency>
+      <artifactId>spring-webmvc</artifactId>
+      <groupId>org.springframework</groupId>
+      <version>${springframework.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-tx</artifactId>
+      <groupId>org.springframework</groupId>
+      <version>${springframework.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>spring-orm</artifactId>
+      <groupId>org.springframework</groupId>
+      <version>${springframework.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>jackson-databind</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>2.11.3</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>hibernate-core</artifactId>
+      <groupId>org.hibernate</groupId>
+      <version>${hibernate.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>hibernate-c3p0</artifactId>
+      <groupId>org.hibernate</groupId>
+      <version>${hibernate.version}</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>mysql-connector-java</artifactId>
+      <groupId>mysql</groupId>
+      <version>8.0.21</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <version>1.18.12</version>
+    </dependency>
+
+  </dependencies>
+  <groupId>org.example</groupId>
+
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <properties>
+
+    <!-- build properties -->
+    <hibernate.version>5.4.21.Final</hibernate.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+
+    <!-- spring -->
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+    <!-- hibernate -->
+    <springframework.version>5.2.9.RELEASE</springframework.version>
+
+
+  </properties>
+
+  <version>1.0-SNAPSHOT</version>
+
+</project>
