@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="persistence-mysql" uuid="87caa5fe-1140-4d2d-9015-b5e9d506919c">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jdbc.properties
+
+C:/Users/Jaeyeop/IdeaProjects/spring-crm-rest-demo/src/main/resources/properties/persistence-mysql.properties</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/spring_crm_rest_demo?serverTimezone=UTC&amp;useSSL=false</jdbc-url>
+    </data-source>
+  </component>
+</project>
